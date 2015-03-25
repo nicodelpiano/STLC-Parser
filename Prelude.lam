@@ -1,0 +1,6 @@
+-- lógica
+def I = \x:B. x
+def K = \x:B.\y:B.x
+def S = \x:B->B->B.\y:B->B.\z:B.(x z) (y z)
+def A = (\n1:Nat.\n2:Nat. R (\n:Nat.suc n) (\x:Nat->Nat.\y:Nat.\z:Nat. R (x (suc 0)) (\w:Nat.\y:Nat.(x w)) z) n1 n2)
+
